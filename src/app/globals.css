@@ -2,22 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(46, 47, 53);
+}
+
+button {
+  padding: 8px 16px;
+  background-color: rgb(153, 255, 0);
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1rem;
+  text-wrap: nowrap;
+}
+
+input {
+  outline: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: rgb(48, 48, 48);
+  border: 2px solid rgb(153, 255, 0);
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 @layer utilities {
